@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button'
 const GLOBE_RADIUS = 2
 const POINT_RADIUS = 0.03
 const NUM_POINTS = 30
-const BUTTON_DISPLAY_DURATION = 3000 // 3 seconds in milliseconds
+const BUTTON_DISPLAY_DURATION = 5000 // 5 seconds in milliseconds
 
 export default function Globe() {
   const router = useRouter()
