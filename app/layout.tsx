@@ -37,7 +37,7 @@ export default function RootLayout({
   `}
         </Script>
       </head>
-      <body className={`${inter.className} h-full bg-black`}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
