@@ -3,14 +3,18 @@ name: Scheduled Commits
 on:
   schedule:
     - cron: '35 9 * * *'
+  workflow_dispatch:  # Add this line to enable manual triggering
 
 jobs:
   daily-commit:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: List files for debugging
+        run: ls -R
 
       - name: Commit specific folder
         run: |
