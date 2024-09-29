@@ -76,10 +76,7 @@ export default function ImageSlider() {
         <p className="text-center text-gray-600 mb-8">
           A simple dynamic image slider/carousel with Unsplash.
         </p>
-        <Carousel
-          interval={interval}
-          className="rounded-lg overflow-hidden relative"
-        >
+        <Carousel className="rounded-lg overflow-hidden relative">
           <CarouselContent>
             {images.map((image, index) => (
               <CarouselItem
